@@ -343,7 +343,6 @@ function undoneTrickList($number){
 function sendRespone($text){
 	#print {GSMSMS}{}{}{$sender}{$text};
 	#echo $text;
-	#$url="http://fe80::1a00:2dff:feb8:7c07%wlan0:9090/sendsms?phone=$userNumber&text=$text&password=";
 	$text=rawurlencode($text);
 	header('Content-Type:text/html;charset=utf-8');
 	header("text:$text");
