@@ -1,8 +1,4 @@
 <?php
-//$sender=$_REQUEST['sender'];
-//$message=$_REQUEST['message'];
-//$userNumber="+381643947344";
-//$input="info";
 $userNumber=$_REQUEST['phone'];
 $input=$_REQUEST['text'];
 $headers= getallheaders();
@@ -341,8 +337,6 @@ function undoneTrickList($number){
 }
 
 function sendRespone($text){
-	#print {GSMSMS}{}{}{$sender}{$text};
-	#echo $text;
 	$text=rawurlencode($text);
 	header('Content-Type:text/html;charset=utf-8');
 	header("text:$text");
