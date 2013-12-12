@@ -338,6 +338,7 @@ function undoneTrickList($number){
 
 function sendRespone($text){
 	$text=rawurlencode($text);
+        
 	header('Content-Type:text/html;charset=utf-8');
 	header("text:$text");
 }
