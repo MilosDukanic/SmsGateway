@@ -153,10 +153,10 @@ else{
 }
 
 function connect(){
-	$db_serverName="localhost";	
-	$db_username="milosduk";
-	$db_password="XRdMmWnwPgWQ";
-	$db_database="milosduk_slackline";
+	$db_serverName="server";	
+	$db_username="username";
+	$db_password="password";
+	$db_database="dbName";
 	$conn=mysql_connect($db_serverName,$db_username,$db_password);
 	$baza=mysql_select_db($db_database,$conn);
 	mysql_set_charset('utf8',$conn);
